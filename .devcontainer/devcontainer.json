@@ -15,5 +15,5 @@
       ]
     }
   },
-  "postCreateCommand": "python3 -m pip install uv && uv pip install --system fastapi"
+  "postCreateCommand": "curl -LsSf https://astral.sh/uv/install.sh | sh && export PATH=\"$HOME/.local/bin:$PATH\" && uv venv && . .venv/bin/activate && uv pip install fastapi"
 }
